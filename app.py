@@ -25,10 +25,10 @@ def hello():
 @app.route("/plus")
 def plus():
     
-    date = "07/01/2021"
+    date = "22/12/2021"
     conn = psycopg2.connect(dbname='postgres', user='postgres', password='postgres', host='db')
     cursor = conn.cursor()
-    add_date = "INSERT INTO increment(Date_app) VALUES ('2020-01-07')"
+    add_date = "INSERT INTO increment(Date_app) VALUES ('2020-12-22')"
     cursor.execute(add_date)
     conn.commit()
     cursor.close()
